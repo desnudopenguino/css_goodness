@@ -29,30 +29,47 @@ body {
 	}
 
 	.col_2 {
-
+		width: ($tablet_min_width - 20)/2;
 	} 
+
+	.col_3 {
+		width: ($tablet_min_width - 20)/3);
+	}
+
+	.col_4 {
+		width: ($tablet_min_width - 20)/4);
+	}
 }
  
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
+
+	$landscape_width: 225px;
 
 	body, .row {
 		min-width: $landscape_min_width - 1;
 	}
  
 	.col_2 {
-
+		width: $landscape_width;
+	}
+	.col_3 {
+		width: $landscape_width;
+	}
+	.col_4 {
+		width: $landscape_width;
 	}
 }
 /* Mobile Portrate Screen Sizes */
 @media only screen and (max-width: $mobile_max_width) {
 
+	$mobile_width: 320px;
 	body, .row {
-		min-width: 320px;
+		min-width: $mobile_width;
 	}
  
 	.col_2 {
-
+		width: $mobile_width - 20; 
 	}
 }
 
