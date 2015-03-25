@@ -44,7 +44,7 @@ body {
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
 
-	$landscape_width: 225px;
+	$landscape_width: ($landscape_min_width - 20)/2;
 
 	body, .row {
 		min-width: $landscape_min_width - 1;
