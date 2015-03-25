@@ -33,11 +33,11 @@ body {
 	} 
 
 	.col_3 {
-		width: ($tablet_min_width - 20)/3);
+		width: ($tablet_min_width - 20)/3;
 	}
 
 	.col_4 {
-		width: ($tablet_min_width - 20)/4);
+		width: ($tablet_min_width - 20)/4;
 	}
 }
  
@@ -69,6 +69,12 @@ body {
 	}
  
 	.col_2 {
+		width: $mobile_width - 20; 
+	}
+	.col_3 {
+		width: $mobile_width - 20; 
+	}
+	.col_4 {
 		width: $mobile_width - 20; 
 	}
 }
