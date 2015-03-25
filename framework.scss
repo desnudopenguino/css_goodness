@@ -1,6 +1,17 @@
 @import 'clearfix';
 @import 'default_colors';
 
+/* Max and min widths for tablet sized screen */
+$tablet_max_width: 959px;
+$tablet_min_width: 768px;
+
+/* Max and min widths for mobile landscape sized screen */
+$landscape_max_width: 767px;
+$landscape_min_width: 480px;
+
+/* Max width for mobile sized screen */
+$mobile_max_width: 479px;
+
 body {
 	margin: 0;
 	padding: 0;
@@ -9,28 +20,40 @@ body {
 	background-color: $white;
 }
 
-.row {
-	width:100%;
-}
+ 
+/* Tablet Screen Sizes */
+@media only screen and (min-width: $tablet_min_width) and (max-width: $tablet_max_width) {
 
-.col3 {
-	width: 33%;
-}
+	body, .row {
+		min-width: $tablet_min_width - 1;
+	}
 
-.col4 {
-	width: 25%;
-}
+	.col_2 {
 
-.col3-offset1 {
-	margin-left: 33%;
+	} 
 }
+ 
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
 
-.col4-offset1 {
-	margin-left: 25%;
+	body, .row {
+		min-width: $landscape_min_width - 1;
+	}
+ 
+	.col_2 {
+
+	}
 }
+/* Mobile Portrate Screen Sizes */
+@media only screen and (max-width: $mobile_max_width) {
 
-.clearfix {
-	clear: both;
+	body, .row {
+		min-width: 320px;
+	}
+ 
+	.col_2 {
+
+	}
 }
 
 .border {
