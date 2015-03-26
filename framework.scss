@@ -20,62 +20,87 @@ body {
 	background-color: $white;
 }
 
- 
-/* Tablet Screen Sizes */
-@media only screen and (min-width: $tablet_min_width) and (max-width: $tablet_max_width) {
+body, .row {
+	width: 100%;
+}
 
-	body, .row {
-		min-width: $tablet_min_width - 1;
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6 {
+	float: left;
+}
+ 
+@media only screen and (min-width: 960px) {
+
+	.col_1 {
+		width: 100%;
 	}
 
 	.col_2 {
-		width: ($tablet_min_width - 20)/2;
+		width: 50%;
 	} 
 
 	.col_3 {
-		width: ($tablet_min_width - 20)/3;
+		width: 33.33%;
 	}
 
 	.col_4 {
-		width: ($tablet_min_width - 20)/4;
+		width: 25%;
+	}
+
+	.col_5 {
+		width: 20%;
+	}
+
+	.col_6 {
+		width: 16.66%;
+	}
+
+}
+
+/* Tablet Screen Sizes */
+@media only screen and (min-width: $tablet_min_width) and (max-width: $tablet_max_width) {
+
+	.col_1 {
+		width: 100%;
+	}
+
+	.col_2 {
+		width: 50%;
+	} 
+
+	.col_3 {
+		width: 33.33%;
+	}
+
+	.col_4 {
+		width: 25%;
+	}
+
+	.col_5 {
+		width: 20%;
+	}
+
+	.col_6 {
+		width: 16.66%;
 	}
 }
  
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
 
-	$landscape_width: ($landscape_min_width - 20)/2;
+	.col_1 {
+		width: 100%;
+	}
 
-	body, .row {
-		min-width: $landscape_min_width - 1;
+	.col_2 , .col_3, .col_4, .col_5, .col_6 {
+		width: 50%;
 	}
- 
-	.col_2 {
-		width: $landscape_width;
-	}
-	.col_3 {
-		width: $landscape_width;
-	}
-	.col_4 {
-		width: $landscape_width;
-	}
+
 }
 /* Mobile Portrate Screen Sizes */
 @media only screen and (max-width: $mobile_max_width) {
 
-	$mobile_width: 320px;
-	body, .row {
-		min-width: $mobile_width;
-	}
- 
-	.col_2 {
-		width: $mobile_width - 20; 
-	}
-	.col_3 {
-		width: $mobile_width - 20; 
-	}
-	.col_4 {
-		width: $mobile_width - 20; 
+	.col_1, .col_2, .col_3, .col_4, .col_5, .col_6 {
+		width: 100%;
 	}
 }
 
