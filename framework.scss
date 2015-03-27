@@ -1,5 +1,6 @@
 @import 'clearfix';
 @import 'default_colors';
+@import 'demo';
 
 /* Max and min widths for tablet sized screen */
 $tablet_max_width: 959px;
@@ -27,37 +28,9 @@ body, .row {
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6 {
 	float: left;
 }
- 
-@media only screen and (min-width: 960px) {
-
-	.col_1 {
-		width: 100%;
-	}
-
-	.col_2 {
-		width: 50%;
-	} 
-
-	.col_3 {
-		width: 33.33%;
-	}
-
-	.col_4 {
-		width: 25%;
-	}
-
-	.col_5 {
-		width: 20%;
-	}
-
-	.col_6 {
-		width: 16.66%;
-	}
-
-}
 
 /* Tablet Screen Sizes */
-@media only screen and (min-width: $tablet_min_width) and (max-width: $tablet_max_width) {
+@media only screen and (min-width: $tablet_min_width) {
 
 	.col_1 {
 		width: 100%;
@@ -137,3 +110,4 @@ a:visited {
 	font-weight: bold;
 	font-size: 125%;
 }
+
