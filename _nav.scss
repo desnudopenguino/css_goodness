@@ -15,6 +15,12 @@
 			background-color: $hover;
 		}
 	}
+
+	.logo {
+		font-size: 200%;
+		float: left;
+		padding: .25em 0;
+	}
 }
 
 @media only screen and (max-width: $mobile_max_width) {
@@ -25,6 +31,7 @@
 		padding: 0;
 
 		 ul {
+			border-top: 1px solid $hover;
 			width: 100%;
 
 			li {
@@ -33,6 +40,9 @@
 				padding: 1em;
 				text-align: right;
 			}
+		}
+		.logo {
+			padding: .25em;
 		}
 	}
 }
