@@ -16,9 +16,6 @@ $mobile_max_width: 479px;
 body {
 	margin: 0;
 	padding: 0;
-}
-
-body, .row {
 	width: 100%;
 }
 
@@ -29,6 +26,10 @@ body, .row {
 
 .flex {
 	width: 100%;
+
+	.row {
+		margin: 0 2em;
+	}
 }
 
 .col_1, .col_2-3, .col_1-2, .col_1-3, .col_1-4, .col_1-5, .col_1-6 , .col_3-4, .col_2-5, .col_3-5, .col_4-5 {
@@ -87,19 +88,31 @@ body, .row {
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
 
-	.flex .col_2-3, .flex .col_3-4, .flex .col_3-5, .flex .col_4-5, .flex .col_5-6 {
-		width: 100%;
-	}
+	.flex {
+		.col_2-3, .col_3-4, .col_3-5, .col_4-5, .col_5-6 {
+			width: 100%;
+		}
 
-	.flex .col_1-3, .flex .col_1-4, .flex .col_1-5, .flex .col_1-6, .flex .col_2-5 {
-		width: 50%
+		.col_1-3, .col_1-4, .col_1-5, .col_1-6, .col_2-5 {
+			width: 50%
+		}
 	}
 
 }
 /* Mobile Portrate Screen Sizes */
 @media only screen and (max-width: $mobile_max_width) {
 
-	.flex .col_2-3, .flex .col_1-2, .flex .col_1-3, .flex .col_1-4, .flex .col_3-4, .flex .col_1-5, .flex .col_1-6 , .flex .col_2-5, .flex .col_3-5, .flex .col_4-5, .flex .col_5-6 {
+	.flex {
 		width: 100%;
+		margin: 0;
+
+		.row {
+			margin: 0;
+			width: auto;
+		}
+
+		.col_2-3, .col_1-2, .col_1-3, .col_1-4, .col_3-4, .col_1-5, .col_1-6, .col_2-5, .col_3-5, .col_4-5, .col_5-6 {
+			width: 100%;
+		}
 	}
 }
