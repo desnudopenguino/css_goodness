@@ -87,8 +87,12 @@ body, .row {
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: $landscape_min_width) and (max-width: $landscape_max_width) {
 
-	.flex .col_2-3, .flex .col_1-3, .flex .col_1-4, .flex .col_3-4, .flex .col_1-5, .flex .col_1-6, .flex .col_2-5, .flex .col_3-5, .flex .col_4-5, .flex .col_5-6 {
-		width: 50%;
+	.flex .col_2-3, .flex .col_3-4, .flex .col_3-5, .flex .col_4-5, .flex .col_5-6 {
+		width: 100%;
+	}
+
+	.flex .col_1-3, .flex .col_1-4, .flex .col_1-5, .flex .col_1-6, .flex .col_2-5 {
+		width: 50%
 	}
 
 }
