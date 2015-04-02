@@ -1,10 +1,19 @@
-$border_color: #333;
-$text_color: #222;
-$hover: #014;
+/* Pictish Tattoo by Faernach
+	http://www.colourlovers.com/palette/143080/Pictish_Tattoo */
+$dusk: #271f3a;
+$woad: #353c53;
+$loch_lomond: #61767e;
+$costa_brava: #d6ccb1;
+$puddy: #d1bf99;
 $white: #fff;
-$link: #014;
-$col_header: #ccc;
-$footer_text: #ccc;
-$header_background: #eef;
-$body_background: #fff;
-$text_color: #000;
+$black: #000;
+
+$border_color: $dusk;
+$text_color: $dusk;
+$hover: $woad;
+$link: $woad;
+$col_header: $loch_lomond;
+$footer_text: $loch_lomond;
+$header_background: $puddy;
+$body_background: $costa_brava;
+$text_color: $dusk;
