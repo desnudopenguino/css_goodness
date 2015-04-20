@@ -11,11 +11,36 @@
 			margin: 0;
 			a {
 				text-decoration: none;
+				color: $hover;
+				background-color: $header_background;
 			}
 		}
 		li:hover {
 			color: $header_background;
 			background-color: $hover;
+			a:hover {
+				color: $header_background;
+				background-color: $hover;
+			}
+		}
+	}
+
+	.logo {
+		font-size: 200%;
+		float: left;
+		padding: .25em 0;
+	}
+}
+
+@media only screen and (max-width: $mobile_max_width) {
+
+	.flex .nav {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		 ul {
+				
 		}
 	}
 
