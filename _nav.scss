@@ -12,10 +12,18 @@ $footer_height: 50px;
 			display: inline;
 			padding: 1em;
 			margin: 0;
+			a {
+				text-decoration: none;
+				color: $dusk;
+			}
 		}
 		li:hover {
 			color: $header_background;
 			background-color: $hover;
+			a:hover {
+				color: $header_background;
+				background-color: $hover;
+			}
 		}
 	}
 
