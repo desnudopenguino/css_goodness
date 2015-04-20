@@ -13,8 +13,12 @@ $landscape_min_width: 480px;
 /* Max width for mobile sized screen */
 $mobile_max_width: 479px;
 
+html {
+	position:relative;
+	min-height: 100%;
+}
+
 body {
-	margin: 0;
 	padding: 0;
 	width: 100%;
 }
