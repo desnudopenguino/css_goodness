@@ -14,12 +14,13 @@ $landscape_min_width: 480px;
 $mobile_max_width: 479px;
 
 html {
-	position:relative;
-	min-height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 body {
 	padding: 0;
+	margin: 0;
 	width: 100%;
 }
 
