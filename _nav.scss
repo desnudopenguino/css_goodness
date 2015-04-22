@@ -19,13 +19,9 @@
 				color: $hover;
 			}
 		}
-		li:hover {
+		li a:hover {
 			color: $header_background;
 			background-color: $hover;
-			a:hover {
-				color: $header_background;
-				background-color: $hover;
-			}
 		}
 	}
 
@@ -34,6 +30,13 @@
 		float: left;
 		padding: .25em 0;
 	}
+}
+
+.footer {
+	padding: 1em 2em;
+	margin-top: 2em;
+	border-top: solid 2px $footer_text;
+	color: $footer_text;
 }
 
 @media only screen and (max-width: $mobile_max_width) {
@@ -86,9 +89,3 @@
 	}
 }
 
-.footer {
-	padding: 1em 2em;
-	margin-top: 2em;
-	border-top: solid 2px $footer_text;
-	color: $footer_text;
-}
